@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Herbal Garden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="tab-container">
+        <div class="hero">
+            <h1>Welcome to the Virtual Herbal Garden</h1>
+        </div>
+        <div class="container">
+            <p>Enter a disease or symptom to get herbal remedy recommendations.</p>
+            
+            <form action="/recommend" method="POST">
+                <input type="text" name="user_input" placeholder="Enter a disease or symptom" required>
+                <button type="submit">Get Recommendations</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

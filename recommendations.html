@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="tab-container">
+        <div class="hero">
+            <h1>Recommended Herbal Remedies</h1>
+        </div>
+        <div class="container">
+            <ul>
+                {% for index, row in recommendations.iterrows() %}
+                    <li>
+                        <strong>Disease:</strong> {{ row['Disease'] }}<br>
+                        <strong>Symptoms:</strong> {{ row['Symptoms'] }}<br>
+                        <strong>Herbal Remedies:</strong> {{ row['Herbal Remedies'] }}<br>
+                        <strong>Description:</strong> {{ row['Description'] }}
+                    </li>
+                {% endfor %}
+            </ul>
+            <a href="/">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

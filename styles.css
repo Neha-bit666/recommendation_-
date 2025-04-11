@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-photo/beautiful-still-life-with-herbal-medicine_23-2149292020.jpg?semt=ais_hybrid'); /* Normal background for the entire page */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Tab Container Styles */
+.tab-container {
+    background-image: url('https://t3.ftcdn.net/jpg/04/63/72/24/360_F_463722443_ODBsYiGgELSLTJIxzYBWSvRAzjUwMAg6.jpg'); /* Separate background for the tab */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    margin: 20px auto; /* Center the tab container */
+    max-width: 800px; /* Limit the width of the tab */
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin: 0;
+    background: linear-gradient(to right, #ff8c42, #ff4500); /* Deep orange gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Container Styles */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff4500; /* Deep orange border on focus */
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4500; /* Deep orange */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e63900; /* Darker orange on hover */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(249, 249, 249, 0.9);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+li strong {
+    background: linear-gradient(to right, #ff8c42, #ff4500); /* Deep orange gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Link Styles */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, #ff8c42, #ff4500); /* Deep orange gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8; /* Slightly fade the link on hover */
+}
+
+/* No Results Styles */
+.no-results {
+    text-align: center;
+    background: linear-gradient(to right, #ff8c42, #ff4500); /* Deep orange gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
